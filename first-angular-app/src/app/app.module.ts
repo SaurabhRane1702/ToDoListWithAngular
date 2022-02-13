@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
@@ -7,12 +8,10 @@ import { TodosComponent } from './components/todos/todos.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent //All componets go here
+    TodosComponent, //All componets go here
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
